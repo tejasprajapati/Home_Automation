@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=smart home.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\smart home -TC:\CooCox\CoIDE\configuration\ProgramData\smart home/arm-gcc-link.ld -g">
+      <target file="smart home.elf" lastModified="14f55e5d17e">
+         <source file="..\obj\cc2500.o" lastModified="14f55e5c90e"/>
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14f55e5c974"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="14f55e5c97b"/>
+         <source file="..\obj\stm32f0xx_spi.o" lastModified="14f55e5c9c3"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14f55e5c9fe"/>
+         <source file="..\obj\smart_home.o" lastModified="14f55e5cd11"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="14f55e5cd8d"/>
+         <source file="..\obj\stm32f0xx_tim.o" lastModified="14f55e5ce36"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="14f55e5ce60"/>
+         <source file="..\obj\stm32f0xx_flash.o" lastModified="14f55e5cea8"/>
+         <source file="..\obj\stm32f0xx_exti.o" lastModified="14f55e5ced5"/>
+         <source file="..\obj\stm32f0xx_syscfg.o" lastModified="14f55e5cf01"/>
+         <source file="..\obj\stm32f0xx_pwr.o" lastModified="14f55e5cf30"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="14f55e5cf58"/>
+         <source file="..\obj\core_cm0.o" lastModified="14f55e5cf7b"/>
+      </target>
+   </processor>
+</history>

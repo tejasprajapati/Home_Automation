@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F100RB -DSTM32F10X_MD_VL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32\Bluetooth1_STM32_eng\stm_lib -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32\Bluetooth1_STM32_eng -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32 -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32\Bluetooth1_STM32_eng\cmsis_boot -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32\Bluetooth1_STM32_eng\stm_lib\inc -I..\..\..\..\..\Users\Tejas\Downloads\Compressed\Bluetooth1_STM32\Bluetooth1_STM32_eng\cmsis">
+      <target file="stm32f10x_rcc.o" lastModified="1459e82cb5d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="13ad45e705e"/>
+      </target>
+      <target file="core_cm3.o" lastModified="1459e82c826">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="13ad45e70a1"/>
+      </target>
+      <target file="misc.o" lastModified="1459e82cc6e">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="13ad45e7044"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="1459e82c88a">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="13ad45e708f"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="1459e82cc04">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="13ad45e7912"/>
+      </target>
+      <target file="startup_stm32f10x_md_vl.o" lastModified="1459e82c7bc">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="13ad45e706d"/>
+      </target>
+      <target file="main.o" lastModified="1459e82cab4">
+         <source file="..\..\..\main.c" lastModified="13ad4626706"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="1459e82c9ad">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="13ad45e792a"/>
+      </target>
+   </processor>
+</history>

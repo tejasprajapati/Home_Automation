@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: STM8L Remote PCB.PcbDoc   29-Aug-15  11:08:40 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : STM8L Remote PCB.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        19.68mil (0.49987mm)     Round          67               7.10 Inch (180.29 mm)
+---------------------------------------------------------------------------
+Totals                                            67               7.10 Inch (180.29 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

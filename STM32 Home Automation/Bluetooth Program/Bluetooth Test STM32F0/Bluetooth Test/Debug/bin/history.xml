@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=Bluetooth Test.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Bluetooth Test -TC:\CooCox\CoIDE\configuration\ProgramData\Bluetooth Test/arm-gcc-link.ld -g">
+      <target file="Bluetooth Test.elf" lastModified="145c7e1b7dc">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="145c6bbdafd"/>
+         <source file="..\obj\main.o" lastModified="145c7e1b5c9"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="145c6bbdbb7"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="145c6bbdc3c"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="145c6bbdce9"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="145c6bbdd3f"/>
+         <source file="..\obj\stm32f0xx_misc.o" lastModified="145c6bbdd90"/>
+         <source file="..\obj\core_cm0.o" lastModified="145c6bbddd9"/>
+      </target>
+   </processor>
+</history>

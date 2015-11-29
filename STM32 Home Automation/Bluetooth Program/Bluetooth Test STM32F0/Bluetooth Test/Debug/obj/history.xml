@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F051R8 -DSTM32F0XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project\Bluetooth Test\cmsis_boot -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project\Bluetooth Test\cmsis_core -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project\Bluetooth Test\stm_lib -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project\Bluetooth Test -ID:\Desktop Backup\All Programs\STM32\Coocox IDE Project\Bluetooth Test\stm_lib\inc">
+      <target file="core_cm0.o" lastModified="145c6bbddd9">
+         <source file="..\..\..\cmsis_core\core_cm0.c" lastModified="145c680236c"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="145c6bbdc3c">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="145c680280b"/>
+      </target>
+      <target file="system_stm32f0xx.o" lastModified="145c6bbdd3f">
+         <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="145c680234d"/>
+      </target>
+      <target file="stm32f0xx_misc.o" lastModified="145c6bbdd90">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_misc.c" lastModified="145c68022e0"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="145c6bbdafd">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="145c6802868"/>
+      </target>
+      <target file="stm32f0xx_usart.o" lastModified="145c6bbdce9">
+         <source file="..\..\..\stm_lib\src\stm32f0xx_usart.c" lastModified="145c68045da"/>
+      </target>
+      <target file="main.o" lastModified="145c7e1b5c9">
+         <source file="..\..\..\main.c" lastModified="145c7e1b260"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="145c6bbdbb7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="145c68022ff"/>
+      </target>
+   </processor>
+</history>

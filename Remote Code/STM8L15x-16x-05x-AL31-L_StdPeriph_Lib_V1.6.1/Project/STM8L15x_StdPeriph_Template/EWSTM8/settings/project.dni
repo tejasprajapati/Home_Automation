@@ -1,0 +1,39 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-1300269706
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[array_types]
+Fmt0=unsigned char[65]	4	0
+[DataSample]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\main.c}.53.3" 1 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\cc2500.c}.111.1" 1 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\main.c}.37.16" 1 0 0 0 "" 0 ""
+Count=3
+[Aliases]
+A0=_ "F:\projects_ronak\IDE\ST_IAR\STM8L_SW\STM8L Std Per Lib\STM8L15x-16x-05x-AL31-L_StdPeriph_Lib_V1.6.1\Project\STM8L15x_StdPeriph_Template\main.c" "C:\Users\Tejas\Desktop\STM8L15x-16x-05x-AL31-L_StdPeriph_Lib_V1.6.1\Project\STM8L15x_StdPeriph_Template\main.c"
+Count=1
+SuppressDialog=0

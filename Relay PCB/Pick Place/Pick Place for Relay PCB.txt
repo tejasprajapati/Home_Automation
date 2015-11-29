@@ -1,0 +1,48 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+C1         B                 1290.001mil    220.001mil       1290mil        220mil   1290.001mil    279.056mil  T        270.00 10uF           
+C2         0805                   894mil        120mil        894mil        120mil    856.599mil        120mil  T          0.00 0.1uF          
+C4         CAPPR2-5x6.8      1029.001mil       1160mil       1029mil       1160mil    989.631mil       1160mil  T          0.00 10uF           
+C5         B                  689.001mil        370mil        689mil        370mil    689.001mil    429.056mil  T        270.00 10uF           
+D1         1N4007_(M7)        534.001mil        705mil        534mil        705mil    534.001mil    766.024mil  T        270.00 1N4007(M7)     
+D2         1N4007_(M7)           2879mil        982mil       2879mil        982mil   2817.977mil        982mil  T        360.00 1N4007(M7)     
+D3         1N4007_(M7)           3609mil        968mil       3609mil        968mil   3547.977mil        968mil  T        360.00 1N4007(M7)     
+D4         1N4007_(M7)           4304mil        965mil       4304mil        965mil   4242.977mil        965mil  T        360.00 1N4007(M7)     
+D5         1N4007_(M7)        739.001mil        705mil        739mil        705mil    739.001mil    643.976mil  T         90.00 1N4007(M7)     
+D6         1N4007_(M7)        314.001mil        705mil        314mil        705mil    314.001mil    643.976mil  T         90.00 1N4007(M7)     
+D7         1N4007_(M7)        749.001mil       1060mil        749mil       1060mil    749.001mil   1121.024mil  T        270.00 1N4007(M7)     
+D8         1N4007_(M7)           4985mil        955mil       4985mil        955mil   4923.977mil        955mil  T        360.00 1N4007(M7)     
+D9         1N4007_(M7)           5713mil        945mil       5713mil        945mil   5651.977mil        945mil  T        360.00 1N4007(M7)     
+J1         Battery_Holder        1645mil       1071mil       1645mil       1071mil   2038.701mil       1071mil  T          0.00 Battery Holder 
+LED1       LED-0805-K         529.001mil        405mil        529mil        405mil    529.001mil      442.5mil  T        270.00                
+P1         HDR1X2             109.001mil        640mil        109mil        590mil    109.001mil        590mil  T         90.00 Header 2       
+P2         HDR1X2             109.001mil        340mil        109mil        290mil    109.001mil        290mil  T         90.00 Header 2       
+P3         HDR1X5            2256.001mil       1102mil       2256mil        902mil   2256.001mil        902mil  T         90.00 Header 5       
+P4         HDR1X5            3230.001mil       1380mil       3430mil       1380mil   3430.001mil       1380mil  T        180.00 Header 5       
+Q1         29-04             2459.001mil       1446mil       2459mil       1446mil   2459.001mil       1496mil  T        180.00 BC547B         
+Q2         29-04             2459.001mil       1206mil       2459mil       1206mil   2459.001mil       1256mil  T        180.00 BC547B         
+Q3         29-04             2453.001mil        963mil       2453mil        963mil   2453.001mil       1013mil  T        180.00 BC547B         
+Q4         29-04             2403.001mil        624mil       2403mil        624mil   2353.001mil        624mil  T        270.00 BC547B         
+Q5         29-04             2147.001mil        633mil       2147mil        633mil   2097.001mil        633mil  T        270.00 BC547B         
+Q6         Si2323_PMOS           1239mil        460mil       1239mil        460mil   1274.433mil    422.598mil  T        180.00 Si2323         
+R2         ERA-0805               619mil        210mil        619mil        210mil    581.599mil        210mil  T        360.00 47E            
+R3         ERA-0805              2672mil       1507mil       2672mil       1507mil   2709.401mil       1507mil  T        180.00 1K             
+R4         ERA-0805              2675mil       1366mil       2675mil       1366mil   2712.401mil       1366mil  T        180.00 1K             
+R5         ERA-0805              2675mil       1217mil       2675mil       1217mil   2712.401mil       1217mil  T        180.00 1K             
+R6         ERA-0805          3336.001mil       1174mil       3336mil       1174mil   3336.001mil   1211.402mil  T        270.00 1K             
+R7         ERA-0805          3437.001mil       1174mil       3437mil       1174mil   3437.001mil   1211.402mil  T        270.00 1K             
+R8         ERA-0805          1154.001mil        280mil       1154mil        280mil   1154.001mil    242.598mil  T         90.00 10K            
+REL1       Relay             2885.118mil    520.354mil       2580mil        855mil   3121.339mil    721.142mil  T        270.00 Relay          
+REL2       Relay             3599.118mil    522.354mil       3294mil        857mil   3835.339mil    723.142mil  T        270.00 Relay          
+REL3       Relay             4295.118mil    509.354mil       3990mil        844mil   4531.339mil    710.142mil  T        270.00 Relay          
+REL4       Relay             5011.118mil    496.354mil       4706mil        831mil   5247.339mil    697.142mil  T        270.00 Relay          
+REL5       Relay             5707.118mil    489.354mil       5402mil        824mil   5943.339mil    690.142mil  T        270.00 Relay          
+S1         Screw_Terminal         426mil       1170mil        524mil       1170mil    524.425mil       1170mil  T        180.00 Screw Terminal 
+S2         Screw_Terminal        3883mil       1322mil       3785mil       1322mil   3784.575mil       1322mil  T          0.00 Screw Terminal 
+S3         Screw_Terminal        4345mil       1322mil       4247mil       1322mil   4246.575mil       1322mil  T          0.00 Screw Terminal 
+S4         Screw_Terminal        4821mil       1322mil       4723mil       1322mil   4722.575mil       1322mil  T          0.00 Screw Terminal 
+S5         Screw_Terminal        5284mil       1334mil       5382mil       1334mil   5382.425mil       1334mil  T        180.00 Screw Terminal 
+S6         Screw_Terminal        5752mil       1334mil       5850mil       1334mil   5850.425mil       1334mil  T        180.00 Screw Terminal 
+U2         MP04A_N                939mil        360mil        939mil        360mil    848.449mil    245.826mil  T         90.00 LM1117MP-3.3   
+U3         221A-04           1014.001mil        800mil       1014mil        800mil   1014.001mil        900mil  T        270.00 MC7812CT       
+

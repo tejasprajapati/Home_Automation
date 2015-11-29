@@ -1,0 +1,16 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+C1         0805                   853mil        269mil        853mil        269mil    890.402mil        269mil  T        180.00 0.1uF          
+C2         0805                  1028mil        386mil       1028mil        386mil       1028mil    348.598mil  T         90.00 0.1uF          
+R1         ERA-0805               436mil        621mil        436mil        621mil    473.402mil        621mil  T        180.00 1K             
+R2         ERA-0805               435mil        704mil        435mil        704mil    472.402mil        704mil  T        180.00 1K             
+U1         STM8L052C6-SQFP50P900X900X1600-48N        753mil        531mil        753mil        531mil    644.732mil    370.566mil  T         90.00 STM8L052C6T6   
+P1         HDR1X8                 948mil         44mil        598mil         44mil        598mil         44mil  T        360.00 Header 8       
+P2         HDR1X8                1298mil        516mil       1298mil        166mil       1298mil        166mil  T         90.00 Header 8       
+P3         HDR1X8                 948mil        990mil       1298mil        990mil       1298mil        990mil  T        180.00 Header 8       
+P4         HDR1X5                 242mil        990mil        442mil        990mil        442mil        990mil  T        180.00 Header 5       
+P5         HDR1X4                  42mil        194mil         42mil        344mil         42mil        344mil  T        270.00 Header 4       
+P6         HDR1X5                  42mil        665mil         42mil        865mil         42mil        865mil  T        270.00 Header 5       
+P7         HDR1X4                 327mil         44mil        177mil         44mil        177mil         44mil  T        360.00 Header 4       
+R3         ERA-0805               152mil        566mil        152mil        566mil        152mil    528.598mil  T         90.00 0E             
+

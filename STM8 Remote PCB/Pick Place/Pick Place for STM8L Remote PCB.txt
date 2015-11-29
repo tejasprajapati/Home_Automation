@@ -1,0 +1,16 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+PGM HDR    HEADER_4_W/O_BORDER    769.575mil    604.221mil    887.685mil    604.221mil    887.685mil    604.221mil  T        180.00 Header 4       
+U1         STM8L052C6-SQFP50P900X900X1600-48N    519.597mil    347.089mil    519.597mil    347.089mil     411.33mil    186.656mil  T         90.00 STM8L052C6T6   
+R2         ERA-0805           209.597mil     477.09mil    209.597mil    477.089mil    246.998mil     477.09mil  T        180.00 1K             
+R1         ERA-0805           210.597mil     394.09mil    210.597mil    394.089mil    247.998mil     394.09mil  T        180.00 1K             
+P7         HEADER_4_W/O_BORDER    235.708mil     38.868mil    117.597mil     38.868mil    117.598mil     38.868mil  T        360.00 Header 4       
+P6         HEADER_5_W/O_BORDER     38.872mil     511.31mil     38.873mil     668.79mil     38.872mil     668.79mil  T        270.00 Header 5       
+P5         HEADER_4_W/O_BORDER     38.872mil    156.979mil     38.873mil    275.089mil     38.872mil     275.09mil  T        270.00 Header 4       
+P4         HEADER_5_W/O_BORDER    196.353mil     747.53mil    353.833mil     747.53mil    353.834mil     747.53mil  T        180.00 Header 5       
+P3         HEADER_8_W/O_BORDER    708.164mil     747.53mil    983.755mil     747.53mil    983.754mil     747.53mil  T        180.00 Header 8       
+P2         HEADER_8_W/O_BORDER    984.818mil    393.199mil    984.817mil    117.609mil    984.818mil    117.608mil  T         90.00 Header 8       
+P1         HEADER_8_W/O_BORDER    709.227mil     38.868mil    433.636mil     38.868mil    433.636mil     38.868mil  T        360.00 Header 8       
+C2         0805               863.598mil    219.837mil    863.597mil    219.837mil    863.598mil    182.436mil  T         90.00 0.1uF          
+C1         0805               776.598mil    208.089mil    776.597mil    208.089mil    776.598mil     245.49mil  T        270.00 0.1uF          
+

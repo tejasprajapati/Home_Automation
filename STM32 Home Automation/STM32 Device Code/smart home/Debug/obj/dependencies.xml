@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Tejas\Desktop\STM32 Device Code\stm_lib\inc /I..\..\..\..\..\Users\Tejas\Desktop /I..\..\..\..\..\Users\Tejas\Desktop\STM32 Device Code\cmsis_core /I..\..\..\..\..\Users\Tejas\Desktop\STM32 Device Code\cmsis_boot /I..\..\..\..\..\Users\Tejas /I..\..\..\..\..\Users\Tejas\Desktop\STM32 Device Code /I..\..\..\..\..\Users\Tejas\Desktop\STM32 Device Code\stm_lib">
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_misc.h" lastModified="145cd55f3e4">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_spi.c" lastModified="14681d2950e">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h" lastModified="145cd55f891">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="145cd55f407">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_pwr.h" lastModified="148bcbc6c8a">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_flash.c" lastModified="145cd560fe6">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_flash.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx.h" lastModified="145cd55f7f2">
+         <include file="..\..\..\cmsis_core\core_cm0.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f0xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f0xx_conf.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_rcc.c" lastModified="145cd55f893">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_gpio.c" lastModified="145cd55f870">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_exti.c" lastModified="148bcbcd59b">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_exti.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_pwr.c" lastModified="148bcbc6ca8">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_pwr.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_flash.h" lastModified="145cd560fe1">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cc2500.c" lastModified="14bdb6da7cb">
+         <include file="..\..\..\rad.h"/>
+         <include file="..\..\..\global.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_misc.c" lastModified="145cd55f3ea">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_tim.h" lastModified="145cd5622eb">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h" lastModified="145cd55f86e">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\global.h" lastModified="149d8794195">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_exti.h" lastModified="148bcbcd57b">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cm0.h" lastModified="145cd55fc07">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_tim.c" lastModified="145cd5622ee">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_syscfg.h" lastModified="14937a4310a">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\rad.h" lastModified="149d88facf6">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.h" lastModified="145cd55f41b">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f0xx_syscfg.c" lastModified="14937a4310b">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_syscfg.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f0xx_spi.h" lastModified="145cd5619b4">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_core\core_cm0.c" lastModified="145cd55f81d">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f0xx.c" lastModified="145cd55f419">
+         <include file="..\..\..\cmsis_boot\stm32f0xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f0xx_conf.h" lastModified="145cd561b1c">
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_exti.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_flash.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_syscfg.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_pwr.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_spi.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f0xx_misc.h"/>
+      </source>
+   </includePath>
+</dependencies>

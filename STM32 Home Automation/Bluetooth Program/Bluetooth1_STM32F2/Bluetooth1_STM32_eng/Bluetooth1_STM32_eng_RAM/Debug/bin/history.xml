@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Bluetooth1_STM32_eng_RAM.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Bluetooth1_STM32_eng -TC:\CooCox\CoIDE\configuration\ProgramData\Bluetooth1_STM32_eng/arm-gcc-link.ld -g">
+      <target file="Bluetooth1_STM32_eng_RAM.elf" lastModified="1459e82ce9f">
+         <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="1459e82c7bc"/>
+         <source file="..\obj\core_cm3.o" lastModified="1459e82c826"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1459e82c88a"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1459e82c9ad"/>
+         <source file="..\obj\main.o" lastModified="1459e82cab4"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1459e82cb5d"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="1459e82cc04"/>
+         <source file="..\obj\misc.o" lastModified="1459e82cc6e"/>
+      </target>
+   </processor>
+</history>

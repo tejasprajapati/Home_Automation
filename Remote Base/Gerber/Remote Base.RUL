@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: D:\Desktop Backup\All Programs\Ongoing Projects\RF Remote\RF Remote Base\Remote Base.PcbDoc
+RuleKind=Width|RuleName=POWER|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=GENERAL|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

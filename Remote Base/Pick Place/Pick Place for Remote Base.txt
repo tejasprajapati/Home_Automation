@@ -1,0 +1,29 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+U1         STM8L052C6_BOARD    658.233mil   3992.875mil     145.87mil   3599.686mil    579.492mil   3638.544mil  T        360.00 STM8L052C6 Board
+U2         CC2500            1556.461mil   3617.186mil    1280.87mil   3634.686mil    1280.87mil   3599.686mil  T          0.00 CC2500         
+SW15       Push_Button_Switch   1512.676mil   1602.631mil   1512.676mil   1602.631mil   1424.094mil   1740.426mil  T        270.00 Push Button Switch
+SW14       Push_Button_Switch   1008.729mil   1602.631mil   1008.729mil   1602.631mil   1097.312mil   1464.836mil  T         90.00 Push Button Switch
+SW13       Push_Button_Switch    521.169mil   1602.631mil    521.169mil   1602.631mil    432.586mil   1740.426mil  T        270.00 Push Button Switch
+SW12       Push_Button_Switch   1752.986mil    2129.24mil   1752.986mil    2129.24mil   1664.404mil   2267.036mil  T        270.00 Push Button Switch
+SW11       Push_Button_Switch   1251.892mil    2129.24mil   1251.892mil    2129.24mil   1340.474mil   1991.444mil  T         90.00 Push Button Switch
+SW10       Push_Button_Switch     762.94mil    2129.24mil     762.94mil    2129.24mil    851.522mil   1991.444mil  T         90.00 Push Button Switch
+SW9        Push_Button_Switch    271.721mil    2129.24mil    271.721mil    2129.24mil    360.304mil   1991.444mil  T         90.00 Push Button Switch
+SW8        Push_Button_Switch   1752.986mil    2674.02mil   1752.986mil    2674.02mil   1664.404mil   2811.816mil  T        270.00 Push Button Switch
+SW7        Push_Button_Switch   1251.892mil    2674.02mil   1251.892mil    2674.02mil   1340.474mil   2536.224mil  T         90.00 Push Button Switch
+SW6        Push_Button_Switch     762.94mil    2674.02mil     762.94mil    2674.02mil    851.522mil   2536.224mil  T         90.00 Push Button Switch
+SW5        Push_Button_Switch    271.721mil    2674.02mil    271.721mil    2674.02mil    360.304mil   2536.224mil  T         90.00 Push Button Switch
+SW4        Push_Button_Switch   1752.986mil    3201.91mil   1752.986mil    3201.91mil   1664.404mil   3339.706mil  T        270.00 Push Button Switch
+SW3        Push_Button_Switch   1251.892mil    3201.91mil   1251.892mil    3201.91mil   1340.474mil   3064.114mil  T         90.00 Push Button Switch
+SW2        Push_Button_Switch     762.94mil    3201.91mil     762.94mil    3201.91mil    851.522mil   3064.114mil  T         90.00 Push Button Switch
+SW1        Push_Button_Switch    271.721mil    3201.91mil    271.721mil    3201.91mil    360.304mil   3064.114mil  T         90.00 Push Button Switch
+ROOM8      Push_Button_Switch   1752.986mil    567.674mil   1752.986mil    567.674mil   1841.568mil    429.878mil  T         90.00 Push Button Switch
+ROOM7      Push_Button_Switch   1251.892mil    567.674mil   1251.892mil    567.674mil   1340.474mil    429.878mil  T         90.00 Push Button Switch
+ROOM6      Push_Button_Switch     762.94mil    567.674mil     762.94mil    567.674mil    851.522mil    429.878mil  T         90.00 Push Button Switch
+ROOM5      Push_Button_Switch    271.721mil    567.674mil    271.721mil    567.674mil    360.304mil    429.878mil  T         90.00 Push Button Switch
+ROOM4      Push_Button_Switch   1752.986mil    1063.03mil   1752.986mil    1063.03mil   1841.568mil    925.234mil  T         90.00 Push Button Switch
+ROOM3      Push_Button_Switch   1251.892mil    1063.03mil   1251.892mil    1063.03mil   1340.474mil    925.234mil  T         90.00 Push Button Switch
+ROOM2      Push_Button_Switch     762.94mil    1063.03mil     762.94mil    1063.03mil    851.522mil    925.234mil  T         90.00 Push Button Switch
+ROOM1      Push_Button_Switch    271.721mil    1063.03mil    271.721mil    1063.03mil    183.138mil   1200.826mil  T        270.00 Push Button Switch
+Bat1       BATT_HOLDER_2XAA   1068.262mil   1316.288mil   1068.262mil   1316.288mil    753.302mil   2402.902mil  B         90.00 NiMH-AA x 2    
+

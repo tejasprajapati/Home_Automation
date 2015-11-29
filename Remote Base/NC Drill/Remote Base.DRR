@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Remote Base.PcbDoc   25-Aug-15  4:12:42 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Remote Base.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        19.68mil (0.49987mm)     Round          43               4.58 Inch (116.27 mm)
+T2        23.62mil (0.59995mm)     Round          8                0.55 Inch (14.00 mm)
+T3        28mil (0.7112mm)         Round          17               9.85 Inch (250.20 mm)
+T4        38mil (0.9652mm)         Round          92               28.48 Inch (723.49 mm)
+T5        48mil (1.2192mm)         Round          4                3.43 Inch (87.20 mm)
+---------------------------------------------------------------------------
+Totals                                            164              46.90 Inch (1191.16 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

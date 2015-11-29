@@ -1,0 +1,21 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Relay PCB.PcbDoc   16-Aug-14  8:51:58 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Relay PCB.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        19.68mil (0.49987mm)     Round          14               10.23 Inch (259.77 mm)
+T2        29.53mil (0.75006mm)     Round          2                0.08 Inch (2.00 mm)
+T3        31.5mil (0.8001mm)       Round          15               1.23 Inch (31.20 mm)
+T4        35.43mil (0.89992mm)     Round          14               6.34 Inch (161.11 mm)
+T5        39.37mil (1mm)           Round          28               11.15 Inch (283.20 mm)
+T6        46.06mil (1.16992mm)     Round          1                0.00 Inch (0.00 mm)
+T7        47.24mil (1.1999mm)      Round          12               5.53 Inch (140.38 mm)
+T8        59.06mil (1.50012mm)     Round          1                0.00 Inch (0.00 mm)
+---------------------------------------------------------------------------
+Totals                                            87               34.55 Inch (877.66 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
