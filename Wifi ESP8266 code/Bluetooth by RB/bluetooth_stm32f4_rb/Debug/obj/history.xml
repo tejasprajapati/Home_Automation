@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IF:\projects_ronak\smart home project\Wifi ESP8266 code\Bluetooth by RB\cmsis_lib\include -IF:\projects_ronak\smart home project\Wifi ESP8266 code\STM32_WiFi -IF:\projects_ronak\smart home project\Wifi ESP8266 code\Bluetooth by RB\cmsis -IF:\projects_ronak\smart home project\Wifi ESP8266 code\Bluetooth by RB -IF:\projects_ronak\smart home project\Wifi ESP8266 code\Bluetooth by RB\cmsis_boot -IF:\projects_ronak\smart home project\Wifi ESP8266 code -IF:\projects_ronak\smart home project -IF:\projects_ronak\smart home project\Wifi ESP8266 code\Bluetooth by RB\cmsis_lib">
+      <target file="stm32f4xx_gpio.o" lastModified="151782ba1ef">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14bd4cb19aa"/>
+      </target>
+      <target file="WiFi_Commands.o" lastModified="151782ba440">
+         <source file="..\..\..\..\STM32_WiFi\WiFi_Commands.c" lastModified="14fc7352fea"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="151782ba26c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="14bd4cacc20"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="151782ba2ba">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14bd4cabafe"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="151782b9f41">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14bd4cabaf4"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="151782b9f12">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="14bd559a8cf"/>
+      </target>
+      <target file="main.o" lastModified="151782ba115">
+         <source file="..\..\..\main.c" lastModified="15178293ed5"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="151782ba191">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14bd4cabaea"/>
+      </target>
+      <target file="misc.o" lastModified="151782ba308">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14bd4caf986"/>
+      </target>
+   </processor>
+</history>

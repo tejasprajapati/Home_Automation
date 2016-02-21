@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=bluetooth_stm32f4_rb.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\bluetooth_stm32f4_rb -TC:\CooCox\CoIDE\configuration\ProgramData\bluetooth_stm32f4_rb/arm-gcc-link.ld -g">
+      <target file="bluetooth_stm32f4_rb.elf" lastModified="151782ba652">
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="151782b9f12"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="151782b9f41"/>
+         <source file="..\obj\main.o" lastModified="151782ba115"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="151782ba191"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="151782ba1ef"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="151782ba26c"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="151782ba2ba"/>
+         <source file="..\obj\misc.o" lastModified="151782ba308"/>
+         <source file="..\obj\WiFi_Commands.o" lastModified="151782ba440"/>
+      </target>
+   </processor>
+</history>
