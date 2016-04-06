@@ -22,11 +22,11 @@ unsigned char * rx_id = "rx_id-123456";
 void spi_init(void);
 int main(void) {
 	spi_init();
-	setup();					// CC2500 RF Module
+	setup();																	/* CC2500 RF Module*/
 	interrupt_enable();
-	usart_rxtx();				// Bluetooth
+	usart_rxtx();																/* Bluetooth*/
 #ifdef Rx_mode
-	cc2500_mode(1); //configure device in rx/tx mode (1 - rx ,0 - tx)
+	cc2500_mode(1); 															/* Configure device in rx/tx mode (1 - rx ,0 - tx)*/
 //		RxData();
 #else if Tx_mode
 			cc2500_mode(0);
@@ -38,7 +38,7 @@ int main(void) {
 		UARTSend("AT\r\n",sizeof("AT\r\n"));
 		delay_ms(1000000);
 		//	PWR_EnterSleepMode(PWR_SLEEPEntry_WFI);  //wfi();// commented temporary by rb must remove it.(15/11/14)
-		if (request_received)   // must be high on external interrupt
+		if (request_received)   												/* Must be high on external interrupt*/
 		 {
 		 request_received = 0;
 		 #ifdef Rx_mode
@@ -70,7 +70,7 @@ void spi_init(void) {
 	SPI_InitTypeDef SPI_InitStructure;
 
 	/* Enable the SPI periph */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE); //RCC_APB2Periph_SPI1
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE); 						/* RCC_APB2Periph_SPI1*/
 
 	/* Enable SCK, MOSI and MISO GPIO clocks */
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA | RCC_AHBPeriph_GPIOC, ENABLE);
@@ -104,7 +104,7 @@ void spi_init(void) {
 
 /*====================== bluetooth gpio =========================================*/
 
-	  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+	  /*RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);*/
 	  /* Configure (PA.8) as output */
 	  /*GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_8;
 	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -116,16 +116,10 @@ void spi_init(void) {
 	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 
-	  /* Configure USART1 Tx (PA.09) as alternate function push-pull */
-	  /*GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
-	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	  GPIO_Init(GPIOA, &GPIO_InitStructure);*/
-
-	  /* Configure USART1 Rx (PA.10) as input floating */
-	  /*GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
-	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;*/
 	  GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+	  /* Configure USART1 Tx (PA.09) as alternate function push-pull */
+	  /* Configure USART1 Rx (PA.10) as input floating */
 
 	  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9 | GPIO_Pin_10;
 	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
@@ -173,14 +167,14 @@ void interrupt_enable(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL; // GPIO_PuPd_UP
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL; 							/* GPIO_PuPd_UP*/
 
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
 
 	EXTI_InitTypeDef EXTI_InitStruct;
-	SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOA, EXTI_PinSource1); // PA1 configured as an interrupt for testing
+	SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOA, EXTI_PinSource1); 				/* PA1 configured as an interrupt for testing*/
 	EXTI_InitStruct.EXTI_Line = EXTI_Line1;
 	EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
 	EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Falling;
@@ -189,7 +183,7 @@ void interrupt_enable(void)
 
 	NVIC_InitTypeDef NVIC_InitStructure;
 
-	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;		// bluetooth
+	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;							/* bluetooth*/
 	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
@@ -212,8 +206,9 @@ void USART_Configuration(void)
   /* Enable USART clock */
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
 
-/* USART1 configuration ------------------------------------------------------*/
-  USART_InitStructure.USART_BaudRate = 9600;		// Baud Rate
+/* --------------------------------------------------USART1 configuration ------------------------------------------------------*/
+
+  USART_InitStructure.USART_BaudRate = 9600;
   USART_InitStructure.USART_WordLength = USART_WordLength_8b;
   USART_InitStructure.USART_StopBits = USART_StopBits_1;
   USART_InitStructure.USART_Parity = USART_Parity_No;
@@ -239,10 +234,7 @@ void USART_Configuration(void)
   */
 void UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
 {
-    //
-    // Loop while there are more characters to send.
-    //
-    while(ulCount--)
+    while(ulCount--)															/* Loop while there are more characters to send.*/
     {
         USART_SendData(USART1, (uint16_t) *pucBuffer++);
         /* Loop until the end of transmission */
@@ -302,15 +294,15 @@ void USART1_IRQHandler(void)
 		{
 			request_received = 1;
 			take_action = i;
-			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_SET);		// Set '1' on PA8
-			UARTSend("LED ON\r\n",sizeof("LED ON\r\n"));	// Send message to UART1
+			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_SET);							/* Turn on led connected on PA8*/
+			UARTSend("LED ON\r\n",sizeof("LED ON\r\n"));						/* Send acknowledge to Bluetooth device*/
 		}
 		else if(strcmp(array,"0\r\n") == 0)
 		{
 			request_received = 1;
 			take_action = i;
-			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_RESET);		// Set '0' on PA8
-			UARTSend("LED OFF\r\n",sizeof("LED OFF\r\n"));
+			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_RESET);							/* Turn off led connected on PA8*/
+			UARTSend("LED OFF\r\n",sizeof("LED OFF\r\n"));						/* Send acknowledge to Bluetooth device*/
 		}
 		else if(strstr(array,"ERROR:(0)\r\n") != NULL)
 		{
@@ -330,15 +322,14 @@ void EXTI0_1_IRQHandler(void)
 	if (EXTI_GetITStatus(EXTI_Line1) != RESET)
 	{
 		char i, k;
-		for (k = 0; k < 12; k++) // clearing the array.
-				{
-			rf_data[k] = '\0';
-		}
-		for (i = 0; i < 12; i++) //reading the data from the fifo
+		memset(rf_data,0,sizeof(rf_data));										/* clearing the array.*/
+
+		for (i = 0; i < 12; i++) 												/* Reading the data from the fifo*/
 				{
 			rf_data[i] = Read(CC2500_RXFIFO);
 		}
-		if (strncmp(rf_data, tx_id, 9) == 0) { // logic to decode the switch no which is pressed must be here.
+		if (strncmp(rf_data, tx_id, 9) == 0)									/* logic to decode the switch no which is pressed must be here.*/
+		{
 			take_action = (((rf_data[9] - 0x30) * 10) + (rf_data[10] - 0x30));
 			request_received = 1;
 			//	send_ack(rx_id);												//commented by ronak 28/9/14 need not to send ack back to master device.
