@@ -5,6 +5,7 @@
 #include "stm32f0xx_exti.h"
 #include "stm32f0xx_syscfg.h"
 #include "global.h"
+#include "pin_conf.h"
 #include "stm32f0xx_pwr.h"
 #include "stm32f0xx_misc.h"
 #include <string.h>
@@ -34,7 +35,7 @@ int main(void) {
 	while (1)
 	{
 
-		led_off;
+		DEV_1_OFF;
 		UARTSend("AT\r\n",sizeof("AT\r\n"));
 		delay_ms(1000000);
 		//	PWR_EnterSleepMode(PWR_SLEEPEntry_WFI);  //wfi();// commented temporary by rb must remove it.(15/11/14)
@@ -52,7 +53,7 @@ int main(void) {
 		if (take_action != 0) {
 			switch (take_action) {
 			case 49:
-				led_toggle;
+				DEV_1_TOGGLE;
 //					delay_ms(100);
 //					led_toggle;
 			case 50:
@@ -104,13 +105,8 @@ void spi_init(void) {
 
 /*====================== bluetooth gpio =========================================*/
 
-	  /*RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);*/
-	  /* Configure (PA.8) as output */
-	  /*GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_8;
-	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	  GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
-	  GPIO_Init(GPIOC, &GPIO_InitStructure); // Save*/
-	  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
+	  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 |\
+			  	  	  	  	  	  	  GPIO_Pin_10 | GPIO_Pin_11 | GPIO_Pin_12;	/*	Initialize all the connected device*/
 	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
 	  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -151,12 +147,6 @@ void spi_init(void) {
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
-	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_Init(GPIOC, &GPIO_InitStructure);
 	/* Deselect : Chip Select high */
 }
 
@@ -294,25 +284,27 @@ void USART1_IRQHandler(void)
 		{
 			request_received = 1;
 			take_action = i;
-			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_SET);							/* Turn on led connected on PA8*/
+			DEV_1_ON;
+			//GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_SET);							/* Turn on led connected on PA8*/
 			UARTSend("LED ON\r\n",sizeof("LED ON\r\n"));						/* Send acknowledge to Bluetooth device*/
 		}
 		else if(strcmp(array,"0\r\n") == 0)
 		{
 			request_received = 1;
 			take_action = i;
-			GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_RESET);							/* Turn off led connected on PA8*/
+			DEV_1_OFF;
+			//GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_RESET);							/* Turn off led connected on PA8*/
 			UARTSend("LED OFF\r\n",sizeof("LED OFF\r\n"));						/* Send acknowledge to Bluetooth device*/
 		}
 		else if(strstr(array,"ERROR:(0)\r\n") != NULL)
 		{
-			led_toggle;
+			DEV_1_TOGGLE;
 			memset(array,0x00,sizeof(array));
 
 		}
 		else if(strstr(array,"OK\r\n") != NULL)
 		{
-			led_toggle1;
+			DEV_2_TOGGLE;
 			memset(array,0x00,sizeof(array));
 		}
 	}

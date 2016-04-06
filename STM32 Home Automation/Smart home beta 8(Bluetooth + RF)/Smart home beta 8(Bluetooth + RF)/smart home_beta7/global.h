@@ -1,7 +1,4 @@
 unsigned char request_received,take_action;
-#define led_toggle GPIOC->ODR ^= GPIO_Pin_8;
-#define led_toggle1 GPIOC->ODR ^= GPIO_Pin_9;
-#define led_off GPIOC->ODR &= ~(GPIO_Pin_8 | GPIO_Pin_9);
 
 #define CC2500_IDLE    0x36      // Exit RX / TX, turn
 #define CC2500_TX      0x35      // Enable TX. If in RX state, only enable TX if CCA passes
