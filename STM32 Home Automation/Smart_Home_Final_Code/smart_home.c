@@ -9,6 +9,8 @@
 #include "stm32f0xx_pwr.h"
 #include "stm32f0xx_misc.h"
 #include <string.h>
+#include <stdio.h>
+
 //#include "rad.h"
 
 //#define Tx_mode
@@ -16,9 +18,14 @@
 unsigned char rf_data[12];
 int i;
 int iLocal = 0;
+int allowed = 0;
+int change_username = 0;
+int change_pwd = 0;
 unsigned char array[50];
 unsigned char * tx_id = "tx-123456";
 unsigned char * rx_id = "rx_id-123456";
+unsigned char uid[20] = "plinth technologies";
+unsigned char pwd[11] = "1234567890";
 
 void device_init(void);
 void spi_init(void);
@@ -30,6 +37,9 @@ int main(void)
 	setup_rf();																	/* CC2500 RF Module*/
 	interrupt_enable();
 	uart_gpio_init();																/* Bluetooth*/
+	PWR_KEY_ON;
+
+#if 0
 	PWR_KEY_OFF;
 	AT_KEY_OFF;
 
@@ -39,13 +49,15 @@ int main(void)
 	usart_rxtx(0);																/* 0 for at command enabling*/
 
 	/*	PLACE ALL COMMAND FOR CONFIGURING BLUETOOTH HERE.*/
+	UARTSend("AT\r\n",sizeof("AT\r\n"));
 
 	PWR_KEY_OFF;
 	AT_KEY_OFF;
-
-	usart_rxtx(0);																/* 0 for communication enabling*/
-
+#endif
+	usart_rxtx(1);																/* 1 for communication enabling*/
+#if 0
 	PWR_KEY_ON;
+#endif
 
 #ifdef Rx_mode
 	cc2500_mode(1); 															/* Configure device in rx/tx mode (1 - rx ,0 - tx)*/
@@ -316,45 +328,120 @@ void USART1_IRQHandler(void)
 
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
 	{
+		array[iLocal] = USART_ReceiveData(USART1);
+		iLocal++;
+		if(iLocal >= 50)
+			iLocal = 0;
 
-//		do
-//		{
-			array[iLocal] = USART_ReceiveData(USART1);
-			iLocal++;
-			if(iLocal >= 50)
+		if(strcmp(array,"plinth technologies\r\n") == 0)
+		{
+			allowed = 1;
+			memset(array,0,sizeof(array));
+			iLocal = 0;
+		}
+		else {
+			UARTSend("Either username or password is incorrect.\r\n",
+					sizeof("Either username or password is incorrect.\r\n"));
+		}
+		if(strcmp(array,"1234567890\r\n") == 0)
+		{
+			allowed = 2;
+			memset(array,0,sizeof(array));
+			iLocal = 0;
+		}
+		else {
+			UARTSend("Either username or password is incorrect.\r\n",
+					sizeof("Either username or password is incorrect.\r\n"));
+		}
+
+		if(allowed == 2)
+		{
+			if(strcmp(array, "change userID\r\n") == 0)
+			{
+				memset(array,0,sizeof(array));
 				iLocal = 0;
-//				break;
-//			delay_ms(10000);
-//			/*i = USART_ReceiveData(USART1);*/
-//		}
-//		while(array[iLocal-1] != '\n');
+				change_username = 1;
+				UARTSend("New User Name: ",sizeof("New User Name: "));
+			}
+			if(change_username == 1)
+			{
+				char *temp = NULL;
+				temp = strstr(array,"New Name:");
+				if(temp != NULL)
+				{
+					memset(uid,0,sizeof(uid));
+					strncpy(uid,temp+9,(strlen(temp+9)-2));
+					change_username = 0;
+				}
+			}
 
-		if(strcmp(array,"1\r\n") == 0)/*(i == '1')*/
-		{
-			request_received = 1;
-			take_action = i;
-			DEV_1_ON;
-			//GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_SET);							/* Turn on led connected on PA8*/
-			UARTSend("LED ON\r\n",sizeof("LED ON\r\n"));						/* Send acknowledge to Bluetooth device*/
-		}
-		else if(strcmp(array,"0\r\n") == 0)
-		{
-			request_received = 1;
-			take_action = i;
-			DEV_1_OFF;
-			//GPIO_WriteBit(GPIOC,GPIO_Pin_8,Bit_RESET);							/* Turn off led connected on PA8*/
-			UARTSend("LED OFF\r\n",sizeof("LED OFF\r\n"));						/* Send acknowledge to Bluetooth device*/
-		}
-		else if(strstr(array,"ERROR:(0)\r\n") != NULL)
-		{
-			DEV_1_TOGGLE;
-			memset(array,0x00,sizeof(array));
+			if(strcmp(array, "change PWD\r\n") == 0)
+			{
+				memset(array,0,sizeof(array));
+				iLocal = 0;
+				change_pwd = 1;
+				UARTSend("New PWD: ",sizeof("New PWD: "));
+			}
+			if(change_username == 1)
+			{
+				char *temp = NULL;
+				temp = strstr(array,"New PWD:");
+				if(temp != NULL)
+				{
+					memset(uid,0,sizeof(uid));
+					strncpy(pwd,temp+8,(strlen(temp+8)-2));
+					change_pwd = 0;
+				}
+			}
 
-		}
-		else if(strstr(array,"OK\r\n") != NULL)
-		{
-			DEV_2_TOGGLE;
-			memset(array,0x00,sizeof(array));
+			if(strcmp(array,"1\r\n") == 0)/*(i == '1')*/
+			{
+				request_received = 1;
+				take_action = i;
+				DEV_1_TOGGLE;													/* Toggle the device 1*/
+				UARTSend("Device 1\r\n",sizeof("Device 1\r\n"));				/* Send acknowledge to Bluetooth device*/
+			}
+			else if(strcmp(array,"2\r\n") == 0)
+			{
+				request_received = 1;
+				take_action = i;
+				DEV_2_TOGGLE;													/* Toggle the device 2*/
+				UARTSend("Device 2\r\n",sizeof("Device 2\r\n"));				/* Send acknowledge to Bluetooth device*/
+			}
+			else if(strcmp(array,"2\r\n") == 0)
+			{
+				request_received = 1;
+				take_action = i;
+				DEV_3_TOGGLE;													/* Toggle the device 3*/
+				UARTSend("Device 3\r\n",sizeof("Device 3\r\n"));				/* Send acknowledge to Bluetooth device*/
+			}
+			else if(strcmp(array,"2\r\n") == 0)
+			{
+				request_received = 1;
+				take_action = i;
+				DEV_4_TOGGLE;													/* Toggle the device 4*/
+				UARTSend("Device 4\r\n",sizeof("Device 4\r\n"));				/* Send acknowledge to Bluetooth device*/
+			}
+			else if(strcmp(array,"2\r\n") == 0)
+			{
+				request_received = 1;
+				take_action = i;
+				DEV_5_TOGGLE;													/* Toggle the device 5*/
+				UARTSend("Device 5\r\n",sizeof("Device 5\r\n"));				/* Send acknowledge to Bluetooth device*/
+			}
+#if 0
+			else if(strstr(array,"ERROR:(0)\r\n") != NULL)
+			{
+				DEV_1_TOGGLE;
+				memset(array,0x00,sizeof(array));
+
+			}
+			else if(strstr(array,"OK\r\n") != NULL)
+			{
+				DEV_2_TOGGLE;
+				memset(array,0x00,sizeof(array));
+			}
+#endif
 		}
 	}
 }
