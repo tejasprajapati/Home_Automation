@@ -17,13 +17,14 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="smart_home.c" partName="smart_home.c" path="D:/Git_Local_Repo/Home_Automation/STM32 Home Automation/Smart home beta 8(Bluetooth + RF)/Smart home beta 8(Bluetooth + RF)/smart home_beta7/smart_home.c" title="smart_home.c" tooltip="D:/Git_Local_Repo/Home_Automation/STM32 Home Automation/Smart home beta 8(Bluetooth + RF)/Smart home beta 8(Bluetooth + RF)/smart home_beta7/smart_home.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="smart_home.c" partName="smart_home.c" path="E:/Home_automation/Home_Automation/STM32 Home Automation/Smart_Home_Final_Code/smart_home.c" title="smart_home.c" tooltip="E:/Home_automation/Home_Automation/STM32 Home Automation/Smart_Home_Final_Code/smart_home.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smart home/smart_home.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="710" selectionTopPixel="180"/>
+<editorState selectionHorizontalPixel="0" selectionLength="325" selectionOffset="13670" selectionTopPixel="6496"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="cc2500.c" partName="cc2500.c" path="D:/Git_Local_Repo/Home_Automation/STM32 Home Automation/Smart home beta 8(Bluetooth + RF)/Smart home beta 8(Bluetooth + RF)/smart home_beta7/cc2500.c" title="cc2500.c" tooltip="D:/Git_Local_Repo/Home_Automation/STM32 Home Automation/Smart home beta 8(Bluetooth + RF)/Smart home beta 8(Bluetooth + RF)/smart home_beta7/cc2500.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smart home/cc2500.c"/>
@@ -37,11 +38,15 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smart home/pin_conf.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1712" selectionTopPixel="0"/>
 </editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" partName="stm32f0xx_spi.c" path="E:/Home_automation/Home_Automation/STM32 Home Automation/Smart_Home_Final_Code/stm_lib/src/stm32f0xx_spi.c" title="stm32f0xx_spi.c" tooltip="E:/Home_automation/Home_Automation/STM32 Home Automation/Smart_Home_Final_Code/stm_lib/src/stm32f0xx_spi.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/smart home/stm_lib/src/stm32f0xx_spi.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="30692" selectionTopPixel="11505"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState>
-<ExpressionKeySet ExpKeys="response_aray,data,request_received,tag,i,array,"/>
+<ExpressionKeySet ExpKeys="i,"/>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
@@ -64,11 +69,11 @@
 <view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 </viewState>
 </view>
-<view id="org.eclipse.cdt.ui.callHierarchy" partName="Call Hierarchy">
-<viewState showFilesInLabels="false" variableFilter="false"/>
-</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
+</view>
+<view id="org.eclipse.cdt.ui.callHierarchy" partName="Call Hierarchy">
+<viewState showFilesInLabels="false" variableFilter="false"/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
@@ -113,7 +118,7 @@
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1d6014d" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.23460722"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.23333333"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -157,7 +162,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.45135567" ratioLeft="283" ratioRight="344" relationship="4" relative="org.eclipse.ui.internal.ViewStack@526229"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@13a3030" ratio="0.68509614" ratioLeft="1140" ratioRight="524" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@13a3030" ratio="0.6954955" ratioLeft="772" ratioRight="338" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.cdt.ui.callHierarchy" appearance="2" expanded="2">
 <page content="org.eclipse.cdt.ui.callHierarchy" label="Call Hierarchy"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -218,21 +223,21 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
 <fastViewBars>&#x0A;<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1fcb33c" orientation="512" selectedTabId="org.coocox.coassistant.view.CoAssistantView_debug" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" ratio="0.29969183"/>
 <view id="org.coocox.coassistant.view.CoAssistantView_debug" ratio="0.29969183"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@137276a" orientation="256" selectedTabId="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" ratio="0.3"/>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@15b4d10" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.29969183"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@15b4d10" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.29969183"/>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@137276a" orientation="256" selectedTabId="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" style="0">&#x0A;<fastViews>&#x0A;<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@d7e9c3" orientation="512" selectedTabId="org.eclipse.debug.ui.ExpressionView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.coocox.component.ui.Help" ratio="0.3"/>
@@ -257,7 +262,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b5822" ratio="0.72408295" ratioLeft="454" ratioRight="173" relationship="4" relative="org.eclipse.ui.internal.ViewStack@15b4d10">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b5822" ratio="0.72408295" ratioLeft="454" ratioRight="173" relationship="4" relative="org.eclipse.ui.internal.ViewStack@15b4d10">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
@@ -318,16 +323,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/smart home/pin_conf.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/smart home/cc2500.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/smart home/global.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/smart home/stm_lib/src/stm32f0xx_spi.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/smart home/smart_home.c"/>
 </editors>
-<item historyLabel="smart_home.c" index="0">
-<position/>
-</item>
-<item historyLabel="pin_conf.h" index="1">
-<position/>
-</item>
-<item historyLabel="smart_home.c" index="0">
-<position/>
-</item>
 <item historyLabel="pin_conf.h" index="1">
 <position info="not_deleted" x="1930" y="0"/>
 </item>
@@ -466,8 +464,17 @@
 <item historyLabel="smart_home.c" index="0">
 <position info="not_deleted" x="1044" y="0"/>
 </item>
-<item active="true" historyLabel="smart_home.c" index="0">
+<item historyLabel="smart_home.c" index="0">
 <position info="not_deleted" x="699" y="50"/>
+</item>
+<item historyLabel="smart_home.c" index="0">
+<position info="not_deleted" x="785" y="0"/>
+</item>
+<item historyLabel="stm32f0xx_spi.c" index="4">
+<position info="not_deleted" x="30398" y="0"/>
+</item>
+<item active="true" historyLabel="smart_home.c" index="5">
+<position info="not_deleted" x="785" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -476,51 +483,51 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pin_conf.h" tooltip="smart home/pin_conf.h">
-<persistable path="/smart home/pin_conf.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" tooltip="smart home/stm_lib/src/stm32f0xx_spi.c">
+<persistable path="/smart home/stm_lib/src/stm32f0xx_spi.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="limits.h" tooltip="C:\Program Files\GNU Tools ARM Embedded\4.7 2013q2\lib\gcc\arm-none-eabi\4.7.4\include-fixed\limits.h">
+<persistable path="C:\Program Files\GNU Tools ARM Embedded\4.7 2013q2\lib\gcc\arm-none-eabi\4.7.4\include-fixed\limits.h" project="smart home"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" tooltip="smart home/cmsis_boot/startup/startup_stm32f0xx.s">
 <persistable path="/smart home/cmsis_boot/startup/startup_stm32f0xx.s"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="global.h" tooltip="smart home/global.h">
-<persistable path="/smart home/global.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cc2500.c" tooltip="smart home/cc2500.c">
+<persistable path="/smart home/cc2500.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.c" tooltip="smart home/stm_lib/src/stm32f0xx_usart.c">
-<persistable path="/smart home/stm_lib/src/stm32f0xx_usart.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_flash.c" tooltip="test2/Cube_lib/src/stm32f4xx_hal_flash.c">
+<persistable path="/test2/Cube_lib/src/stm32f4xx_hal_flash.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.c" tooltip="smart home/stm_lib/src/stm32f0xx_gpio.c">
-<persistable path="/smart home/stm_lib/src/stm32f0xx_gpio.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" tooltip="test2/Cube_lib/inc/stm32f4xx_hal_gpio.h">
+<persistable path="/test2/Cube_lib/inc/stm32f4xx_hal_gpio.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" tooltip="smart home/stm_lib/src/stm32f0xx_spi.c">
-<persistable path="/smart home/stm_lib/src/stm32f0xx_spi.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.c" tooltip="WiFi_Test/stm_lib/src/stm32f0xx_usart.c">
-<persistable path="/WiFi_Test/stm_lib/src/stm32f0xx_usart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" tooltip="WiFi_Test/cmsis_boot/startup/startup_stm32f0xx.s">
-<persistable path="/WiFi_Test/cmsis_boot/startup/startup_stm32f0xx.s"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WiFi_Commands_Prototype.h" tooltip="WiFi_Test/WiFi_Commands_Prototype.h">
-<persistable path="/WiFi_Test/WiFi_Commands_Prototype.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WiFi_Commands.c" tooltip="WiFi_Test/WiFi_Commands.c">
-<persistable path="/WiFi_Test/WiFi_Commands.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="WiFi_Test/main.c">
-<persistable path="/WiFi_Test/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio_ex.h" tooltip="test2/Cube_lib/inc/stm32f4xx_hal_gpio_ex.h">
+<persistable path="/test2/Cube_lib/inc/stm32f4xx_hal_gpio_ex.h"/>
 </file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
 <persistable>&#x0A;<subPage/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="WiFi_test/main.c">
-<persistable path="/WiFi_test/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="EXTI_Example.c" tooltip="Test_EXTI/example/EXTI_Example.c">
+<persistable path="/Test_EXTI/example/EXTI_Example.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cc2500.c" tooltip="smart home/cc2500.c">
-<persistable path="/smart home/cc2500.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" tooltip="Test_EXTI/cmsis_boot/startup/startup_stm32f0xx.s">
+<persistable path="/Test_EXTI/cmsis_boot/startup/startup_stm32f0xx.s"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.c" tooltip="smart home/stm_lib/src/stm32f0xx_exti.c">
-<persistable path="/smart home/stm_lib/src/stm32f0xx_exti.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Test_EXTI/main.c">
+<persistable path="/Test_EXTI/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_exti.h" tooltip="smart home/stm_lib/inc/stm32f0xx_exti.h">
+<persistable path="/smart home/stm_lib/inc/stm32f0xx_exti.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_misc.c" tooltip="smart home/stm_lib/src/stm32f0xx_misc.c">
+<persistable path="/smart home/stm_lib/src/stm32f0xx_misc.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" tooltip="smart home/cmsis_boot/stm32f0xx.h">
+<persistable path="/smart home/cmsis_boot/stm32f0xx.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" tooltip="smart home/cmsis_boot/stm32f0xx.h">
+<persistable path="/smart home/cmsis_boot/stm32f0xx.h"/>
 </file>
 </mruList>
 </workbench>

@@ -81,8 +81,8 @@
     <Component id="437" name="USART" path="" type="2"/>
   </Components>
   <Files>
-    <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
     <File name="cmsis_boot/stm32f0xx_conf.h" path="cmsis_boot/stm32f0xx_conf.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f0xx.s" path="cmsis_boot/startup/startup_stm32f0xx.s" type="1"/>
     <File name="pin_conf.h" path="pin_conf.h" type="1"/>
     <File name="stm_lib/src/stm32f0xx_exti.c" path="stm_lib/src/stm32f0xx_exti.c" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
@@ -90,8 +90,8 @@
     <File name="stm_lib/inc/stm32f0xx_gpio.h" path="stm_lib/inc/stm32f0xx_gpio.h" type="1"/>
     <File name="stm_lib/src/stm32f0xx_misc.c" path="stm_lib/src/stm32f0xx_misc.c" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_exti.h" path="stm_lib/inc/stm32f0xx_exti.h" type="1"/>
-    <File name="stm_lib/inc/stm32f0xx_tim.h" path="stm_lib/inc/stm32f0xx_tim.h" type="1"/>
     <File name="stm_lib/src/stm32f0xx_rcc.c" path="stm_lib/src/stm32f0xx_rcc.c" type="1"/>
+    <File name="stm_lib/inc/stm32f0xx_tim.h" path="stm_lib/inc/stm32f0xx_tim.h" type="1"/>
     <File name="stm_lib/inc/stm32f0xx_flash.h" path="stm_lib/inc/stm32f0xx_flash.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="stm_lib/inc/stm32f0xx_pwr.h" path="stm_lib/inc/stm32f0xx_pwr.h" type="1"/>
@@ -117,8 +117,8 @@
     <File name="stm_lib/src/stm32f0xx_tim.c" path="stm_lib/src/stm32f0xx_tim.c" type="1"/>
     <File name="stm_lib/src/stm32f0xx_syscfg.c" path="stm_lib/src/stm32f0xx_syscfg.c" type="1"/>
     <File name="stm_lib/inc" path="" type="2"/>
-    <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>
     <File name="smart_home.c" path="smart_home.c" type="1"/>
+    <File name="stm_lib/src/stm32f0xx_gpio.c" path="stm_lib/src/stm32f0xx_gpio.c" type="1"/>
     <File name="cmsis_core/core_cm0.c" path="cmsis_core/core_cm0.c" type="1"/>
   </Files>
 </Project>

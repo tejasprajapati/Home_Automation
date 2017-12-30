@@ -453,7 +453,7 @@ void EXTI0_1_IRQHandler(void)
 		memset(rf_data,0,sizeof(rf_data));										/* clearing the array.*/
 
 		for (i = 0; i < 12; i++) 												/* Reading the data from the fifo*/
-				{
+		{
 			rf_data[i] = Read(CC2500_RXFIFO);
 		}
 		if (strncmp(rf_data, tx_id, 9) == 0)									/* logic to decode the switch no which is pressed must be here.*/
